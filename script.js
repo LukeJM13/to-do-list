@@ -8,5 +8,10 @@ function newActivity() {
         li.appendChild(t);
         document.getElementById("list").appendChild(li);
         document.getElementById('input').value = "";
+        let span = document.createElement("button");
+        let txt = document.createTextNode("Close");
+        span.className = "close";
+        span.appendChild(txt);
+        li.appendChild(span);
     }
 }
